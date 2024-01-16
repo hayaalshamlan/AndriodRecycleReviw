@@ -36,7 +36,7 @@ public class CurrencyAccountsAdapter extends RecyclerView.Adapter<CurrencyAccoun
         Currency currency = accountsList.get(position);
         holder.CurrencyCode.setText(currency.getCurrencyCode());
         holder.CurrencyName.setText(currency.getCurrencyName());
-        holder.ExchangeRate.setText(currency.getExchangeRate());
+        holder.ExchangeRate.setText(String.valueOf(currency.getExchangeRate()));
     }
 
     @Override
